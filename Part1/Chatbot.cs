@@ -13,14 +13,14 @@ namespace CyberAwarenessBot
         {
             isRunning = true;
 
-            // Display visual elements and audio greeting
+            // Display visual and plays audio greeting
             UIHelper.PrintAsciiArt();
             UIHelper.PlayGreeting("greeting.wav");
 
             UIHelper.PrintHeader("INITIALIZING SYSTEM");
             UIHelper.Typewrite("Loading cybersecurity modules...", ConsoleColor.Cyan);
 
-            // Initial text-based greeting and personalization
+            // Initial text-based greeting 
             UIHelper.Typewrite("\nHello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.", ConsoleColor.Yellow);
             UIHelper.Typewrite("Before we begin, may I know your name?", ConsoleColor.White);
 
@@ -48,7 +48,7 @@ namespace CyberAwarenessBot
         {
             string input = "";
 
-            // Input Validation Loop: Prevent empty or whitespace-only inputs
+            // Input Validation Loop to Prevent empty or whitespace-only inputs
             while (string.IsNullOrWhiteSpace(input))
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -71,7 +71,6 @@ namespace CyberAwarenessBot
             Console.Write("Bot > ");
             Console.ResetColor();
 
-            // Basic Response System using string manipulation and keyword matching
             if (input.Contains("exit") || input.Contains("quit") || input.Contains("bye"))
             {
                 UIHelper.Typewrite($"Stay safe online, {UserName}! Goodbye.", ConsoleColor.Yellow);
