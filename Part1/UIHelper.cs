@@ -44,12 +44,12 @@ namespace CyberAwarenessBot
         {
             Console.ForegroundColor = ConsoleColor.Green;
             string art = @"
-   _____       _               _____           _   
-  /  __ \     | |             |  _  |         | |  
-  | /  \/_   _| |__   ___ _ __| | | |___ _ __ | |_ 
-  | |   | | | | '_ \ / _ \ '__| | | / __| '_ \| __|
-  | \__/\ |_| | |_) |  __/ |  \ \_/ /\__ \ | | | |_ 
-   \____/\__, |_.__/ \___|_|   \___/ |___/_| |_|\__|
+   _____       _                 _____           _   
+  /  __ \     | |               |  _  |         | |  
+  | /  \/_   _| |__   ___ _ __  | | | |___ _ __ | |_ 
+  | |   | | | | '_ \ / _ \ '__  | | | / __| '_ \| __|
+  | \__/\ |_| | |_) |  __/ |     \ \_/ /\__ \ | | | |_ 
+   \____/\__, |_.__/ \___|_|      \___/ |___/_| |_|\__|
           __/ |                                     
          |___/      Awareness Bot v1.0               
             ";
@@ -57,7 +57,7 @@ namespace CyberAwarenessBot
             Console.ResetColor();
         }
 
-        // Plays the greeting .wav file using System.Media
+        // Plays the greeting 
         public static void PlayGreeting(string filepath)
         {
             try
@@ -66,7 +66,7 @@ namespace CyberAwarenessBot
                 {
                     using (SoundPlayer player = new SoundPlayer(filepath))
                     {
-                        player.Play(); // Plays asynchronously so it doesn't freeze the console
+                        player.Play(); // 
                     }
                 }
                 else
