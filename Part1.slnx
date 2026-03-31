@@ -1,4 +1,6 @@
 <Solution>
-  <Folder Name="/Solution Items/" />
+  <Folder Name="/Solution Items/">
+    <File Path="Readme.txt" />
+  </Folder>
   <Project Path="Part1/Part1.csproj" />
 </Solution>
