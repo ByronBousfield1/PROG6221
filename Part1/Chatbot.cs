@@ -90,7 +90,7 @@ namespace CyberAwarenessBot
             }
             else if (input.Contains("password"))
             {
-                UIHelper.Typewrite("PASSWORD SAFETY TIPS:\n1. Use a mix of upper/lower case letters, numbers, and symbols.\n2. Never reuse passwords across different sites.\n3. Consider using a reputable password manager.\n4. Enable Two-Factor Authentication (2FA) wherever possible.", ConsoleColor.Magenta);
+                UIHelper.Typewrite("PASSWORD SAFETY TIPS:\n1. Use a mix of upper/lower case letters, numbers, and symbols and a.\n2. Never reuse passwords across different sites.\n3. Consider using a reputable password manager rather write it on paper.\n4. Enable Two-Factor Authentication (2FA) wherever possible.", ConsoleColor.Magenta);
             }
             else if (input.Contains("phish"))
             {
